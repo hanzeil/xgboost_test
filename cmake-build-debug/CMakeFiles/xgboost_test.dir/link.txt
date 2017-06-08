@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/xgboost_test.dir/src/main.cpp.o CMakeFiles/xgboost_test.dir/src/XGBoost.cpp.o  -o xgboost_test  -L/home/hanzeil/coding/ClionProjects/xgboost_test/lib -Wl,-rpath,/home/hanzeil/coding/ClionProjects/xgboost_test/lib -rdynamic -lxgboost 

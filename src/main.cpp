@@ -5,6 +5,7 @@
 #include <iostream>
 #include "XGBoost.h"
 #include "xgboost/c_api.h"
+#include <limits>
 
 using namespace std;
 
@@ -12,10 +13,12 @@ int main() {
     XGBoost xg_boost;
     xg_boost.set_training_set_num(1);
     xg_boost.add_training_set_from_csv(
-            "/home/tangjinghao/work/xgboost_test/data/tae1.data", 100, 6);
+            "../data/adult3.data.csv", 12000, 15);
     xg_boost.train();
-    xg_boost.add_predict_set_from_csv(
-            "/home/tangjinghao/work/xgboost_test/data/tae1.data", 100, 6);
+    xg_boost.set_test_set_from_csv(
+            "../data/adult4.data.csv", 3000, 15);
+    xg_boost.predict();
+    xg_boost.precision_and_recall();
     /*
     // create the train data
     int cols = 3, rows = 5;
@@ -80,5 +83,6 @@ int main() {
     XGDMatrixFree(h_test);
     XGBoosterFree(h_booster);
     */
+    //std::cout<<std::numeric_limits<double>::min()<<std::endl;
     return 0;
 }

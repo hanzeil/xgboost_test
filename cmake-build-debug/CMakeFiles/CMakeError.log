@@ -1,0 +1,27 @@
+Detecting C [-std=c99] compiler features failed to compile with the following output:
+Change Dir: /home/hanzeil/coding/ClionProjects/xgboost_test/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c300b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c300b.dir/build.make CMakeFiles/cmTC_c300b.dir/build
+make[1]: 进入目录“/home/hanzeil/coding/ClionProjects/xgboost_test/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_c300b.dir/feature_tests.c.o
+/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_c300b.dir/feature_tests.c.o   -c /home/hanzeil/coding/ClionProjects/xgboost_test/cmake-build-debug/CMakeFiles/feature_tests.c
+make[1]: fork: 资源暂时不可用
+make[1]: 离开目录“/home/hanzeil/coding/ClionProjects/xgboost_test/cmake-build-debug/CMakeFiles/CMakeTmp”
+make: *** [Makefile:126：cmTC_c300b/fast] 错误 2
+
+
+
+Determining if the CXX compiler works failed with the following output:
+Change Dir: /home/hanzeil/coding/ClionProjects/xgboost_test/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1fffd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1fffd.dir/build.make CMakeFiles/cmTC_1fffd.dir/build
+make[1]: 进入目录“/home/hanzeil/coding/ClionProjects/xgboost_test/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_1fffd.dir/testCXXCompiler.cxx.o
+/usr/bin/c++      -o CMakeFiles/cmTC_1fffd.dir/testCXXCompiler.cxx.o -c /home/hanzeil/coding/ClionProjects/xgboost_test/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+make[1]: fork: 资源暂时不可用
+make[1]: 离开目录“/home/hanzeil/coding/ClionProjects/xgboost_test/cmake-build-debug/CMakeFiles/CMakeTmp”
+make: *** [Makefile:126：cmTC_1fffd/fast] 错误 2
+
+

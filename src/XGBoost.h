@@ -20,6 +20,8 @@ class XGBoost {
 public:
     XGBoost();
 
+    ~XGBoost();
+
     bool add_training_set_from_csv(const string &in_file_path, const std::size_t rows, const std::size_t cols);
 
     bool set_test_set_from_csv(const string &in_file_path, const std::size_t rows, const std::size_t cols);
@@ -28,15 +30,24 @@ public:
 
     bool train();
 
+    bool predict();
+
+    void precision_and_recall();
+
 private:
     DMatrixHandle *h_train_;
     DMatrixHandle *h_test_;
     BoosterHandle h_booster_;
+    const float *predict_labels;
     std::size_t training_set_num_;
     std::size_t cur_training_set_num_;
 
     bool create_matrix_from_csv(const string &in_file_path, const std::size_t rows, const std::size_t cols,
-                                DMatrixHandle &h_train_);
+                                DMatrixHandle &h_train);
 
+
+    int round(float num);
+
+};
 
 #endif //XGBOOST_TEST_XGBOOST_H
